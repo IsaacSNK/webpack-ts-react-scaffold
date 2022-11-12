@@ -1,6 +1,8 @@
 import React from "react";
-import './App.css';
 
 export const App = (props: unknown) => {
-    return <h1>Hello World!!!</h1>;
+    const clickHandler = () => {
+        console.log('Clicked!');
+    };
+    return <button onClick={clickHandler}>Click me</button>;
 }
