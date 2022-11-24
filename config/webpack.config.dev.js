@@ -7,6 +7,9 @@ module.exports = {
     filename: '[name].bundle.js'
   },
   devServer: {
-    static: [path.join(__dirname, '..', 'build')]
+    static: [path.join(__dirname, '..', 'build')],
+    devMiddleware: {
+      writeToDisk: true,
+    }
   }
 };
